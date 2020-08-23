@@ -21,20 +21,6 @@ const TweeterModule = function () {
 	]
 	posts.commentCount = 6
 
-	for(let key in posts) {
-		// key = 0
-		// key = 1
-		// key = commentCount
-	}
-	for(let i=0; i< posts.length; i++) {
-		// i = 0
-		// i = 1
-	}
-	for(let post of posts) {
-		// post = {id:p1...}
-		// post = {id:p2...}
-	}
-
 	const countPosts = function () {
 		return posts.length
 	}
@@ -87,17 +73,3 @@ const TweeterModule = function () {
 
 	return { countPosts, countComments, getPosts, addPost, removePost, addComment, removeComment }
 }
-
-//const T = TweeterModule()
-
-// T.postIdCounter()
-// T.commentIdCounter()
-// T.addPost("This is my own post!")
-// T.removePost("p1")
-// T.addComment("Damn straight it is!", "p3")
-// T.addComment("Second the best!", "p2")
-// T.removeComment("p2", "c6")
-// T.getPosts()
-
-
-
